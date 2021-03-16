@@ -1,3 +1,4 @@
+//TODO Configure webpack for global CSS Import
 module.exports = {
   reactOptions: {
     fastRefresh: true,
