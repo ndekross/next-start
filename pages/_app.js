@@ -1,9 +1,9 @@
 import { ApolloProvider } from "@apollo/client"
-import { useApollo } from "../apollo"
+import { useApollo } from "graphql/init.apollo.js"
 import "../styles/reset.css"
 
 function MyApp({ Component, pageProps }) {
-  const client = useApollo()
+  const client = useApollo(pageProps)
   return (
     <ApolloProvider {...{ client }}>
       <Component {...pageProps} />
