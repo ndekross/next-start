@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "design": "start-storybook -p 6006",
+    "des": "start-storybook --quiet --no-dll -p 6006 ",
     "debug": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
@@ -41,6 +41,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
     "jest": "^26.6.3",
+    "storybook-dark-mode": "^1.0.7",
     "typescript": "^4.2.3"
   }
 }
