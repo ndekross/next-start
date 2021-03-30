@@ -2,11 +2,22 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
-      "request": "attach",
-      "name": "Launch Program",
-      "skipFiles": ["<node_internals>/**"],
-      "port": 9229
+      "name": "Next: Client",
+      "type": "pwa-chrome",
+      "request": "launch",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "name": "Next: Server",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/next"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next: All",
+      "configurations": ["Next: Server", "Next: Client"]
     }
   ]
 }
